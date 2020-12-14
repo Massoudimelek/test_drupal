@@ -1,0 +1,10 @@
+uuid: 841c9eb9-b715-4fad-91df-76230a5aeb49
+langcode: en
+status: true
+dependencies:
+  module:
+    - derniers_articles
+id: derniers_articles.token
+label: Token
+targetEntityType: derniers_articles
+cache: true

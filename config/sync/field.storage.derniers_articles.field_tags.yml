@@ -1,0 +1,20 @@
+uuid: 7215054c-11e3-4c53-8200-3348665e1612
+langcode: en
+status: true
+dependencies:
+  module:
+    - derniers_articles
+    - taxonomy
+id: derniers_articles.field_tags
+field_name: field_tags
+entity_type: derniers_articles
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,7 @@
+test_module.settings_form:
+  path: '/admin/config/system/test-module'
+  defaults:
+    _title: 'test_module settings'
+    _form: 'Drupal\test_module\Form\SettingsForm'
+  requirements:
+    _permission: 'administer test_module configuration'

@@ -1,0 +1,23 @@
+uuid: 2f5c1268-af4a-4251-bc90-2c5edced0382
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.articles_search
+  module:
+    - views
+  theme:
+    - bartik
+id: exposedformarticles_searchpage_1
+theme: bartik
+region: content
+weight: -7
+provider: null
+plugin: 'views_exposed_filter_block:articles_search-page_1'
+settings:
+  id: 'views_exposed_filter_block:articles_search-page_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: 'Recherche d''articles récents'
+visibility: {  }

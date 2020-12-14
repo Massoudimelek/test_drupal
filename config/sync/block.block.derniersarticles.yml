@@ -1,0 +1,24 @@
+uuid: b3410862-d4a5-416d-b067-9a17fc04669a
+langcode: en
+status: true
+dependencies:
+  module:
+    - test_module
+  theme:
+    - bartik
+id: derniersarticles
+theme: bartik
+region: content
+weight: -6
+provider: null
+plugin: test_module_derniers_articles
+settings:
+  id: test_module_derniers_articles
+  label: 'Derniers Articles'
+  provider: test_module
+  label_display: visible
+  block_count: '20'
+  feed: '1'
+  block_cache: '4'
+  foo: 'Hello world!'
+visibility: {  }

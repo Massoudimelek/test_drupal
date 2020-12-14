@@ -1,0 +1,14 @@
+uuid: 36e0db2f-b364-4b47-8943-e04c1977eb79
+langcode: en
+status: true
+dependencies:
+  module:
+    - derniers_articles
+id: arctiles
+label: articles
+type: 'canonical_entities:derniers_articles'
+pattern: '[derniers_articles:title]/[derniers_articles:id]'
+selection_criteria: {  }
+selection_logic: and
+weight: 0
+relationships: {  }

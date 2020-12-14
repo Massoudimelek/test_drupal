@@ -1,0 +1,7 @@
+entity.derniers_articles.settings:
+  path: 'admin/structure/derniers-articles'
+  defaults:
+    _form: '\Drupal\derniers_articles\Form\DerniersArticlesSettingsForm'
+    _title: 'Derniers Articles'
+  requirements:
+    _permission: 'administer derniers articles'

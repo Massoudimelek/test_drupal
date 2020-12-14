@@ -1,0 +1,81 @@
+<?php
+
+/**
+ * @file
+ * Provides a derniers articles entity type.
+ */
+
+use Drupal\Core\Render\Element;
+// Feeds.
+use Drupal\aggregator\Entity\Feed;
+// Feed items.
+use Drupal\aggregator\Entity\Item;
+
+/**
+ * Implements hook_theme().
+ */
+function derniers_articles_theme()
+{
+  return [
+    'derniers_articles' => [
+      'render element' => 'elements',
+    ],
+  ];
+}
+
+
+function derniers_articles_entity_presave(Drupal\Core\Entity\EntityInterface $entity)
+{
+
+  if ($entity->getEntityType()->get('id') == 'aggregator_feed'  && $entity->get('title')->value = 'drupal feed') {
+
+    $query = \Drupal::entityQuery('aggregator_item');
+    $query->condition('fid', '1', '=');
+    $entity_ids = $query->execute();
+
+
+    foreach ($entity_ids as $key => $item) {
+
+      $feed = Item::load($key);
+      $node = \Drupal::entityTypeManager()->getStorage('derniers_articles')->load($feed->get('iid')->value);
+
+      if (!isset($node) && empty($node)) {
+        $data = [
+          'id' => $feed->get('iid')->value,
+          'title' => $feed->get('title')->value,
+          'field_description' => $feed->get('description')->value,
+          'uid' => 1
+        ];
+        $node = Drupal::entityTypeManager()
+          ->getStorage('derniers_articles')
+          ->create($data);
+        $node->save();
+      } else {
+        $node->set('title', $feed->get('title')->value);
+        $node->set('field_description', array(
+          'value' => $feed->get('description')->value,
+          'format' => 'basic_html',
+        ));
+        $node->save();
+      }
+    }
+  }
+}
+
+/**
+ * Prepares variables for derniers articles templates.
+ *
+ * Default template: derniers-articles.html.twig.
+ *
+ * @param array $variables
+ *   An associative array containing:
+ *   - elements: An associative array containing the derniers articles information and any
+ *     fields attached to the entity.
+ *   - attributes: HTML attributes for the containing element.
+ */
+function template_preprocess_derniers_articles(array &$variables)
+{
+  foreach (Element::children($variables['elements']) as $key) {
+    $variables['content'][$key] = $variables['elements'][$key];
+  }
+}

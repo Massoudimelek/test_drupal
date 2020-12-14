@@ -1,0 +1,5 @@
+derniers_articles.add_form:
+  route_name: entity.derniers_articles.add_form
+  title: 'Add derniers articles'
+  appears_on:
+    - entity.derniers_articles.collection

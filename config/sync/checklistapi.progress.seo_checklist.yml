@@ -1,0 +1,98 @@
+progress:
+  '#changed': 1607972164
+  '#changed_by': '1'
+  '#completed_items': 31
+  '#items':
+    install_and_enable_seo_checklist_module:
+      '#completed': 1607971621
+      '#uid': '1'
+    install_and_enable_coffee_module:
+      '#completed': 1607971621
+      '#uid': '1'
+    configure_coffee_module:
+      '#completed': 1607971621
+      '#uid': '1'
+    install_and_enable_admin_toolbar_module:
+      '#completed': 1607971621
+      '#uid': '1'
+    install_composer_command_line_tool:
+      '#completed': 1607971621
+      '#uid': '1'
+    install_console_command_line_tool:
+      '#completed': 1607971621
+      '#uid': '1'
+    install_drush_command_line_tool:
+      '#completed': 1607971621
+      '#uid': '1'
+    show_cli_commands:
+      '#completed': 1607971621
+      '#uid': '1'
+    enable_clean_urls:
+      '#completed': 1607971767
+      '#uid': '1'
+    install_and_enable_redirect_module:
+      '#completed': 1607971767
+      '#uid': '1'
+    configure_the_redirect_module:
+      '#completed': 1607971767
+      '#uid': '1'
+    install_and_enable_pathauto_module:
+      '#completed': 1607971767
+      '#uid': '1'
+    configure_pathauto_module:
+      '#completed': 1607971767
+      '#uid': '1'
+    create_pathauto_patterns:
+      '#completed': 1607971767
+      '#uid': '1'
+    install_and_enable_metatag_module:
+      '#completed': 1607971891
+      '#uid': '1'
+    set_metatags_for_your_site:
+      '#completed': 1607971891
+      '#uid': '1'
+    install_and_enable_alternate_hreflang_module:
+      '#completed': 1607971891
+      '#uid': '1'
+    install_and_enable_xml_sitemap_module:
+      '#completed': 1607971990
+      '#uid': '1'
+    set_up_cron:
+      '#completed': 1607971990
+      '#uid': '1'
+    get_a_google_account:
+      '#completed': 1607971990
+      '#uid': '1'
+    verify_with_google_search_console:
+      '#completed': 1607971990
+      '#uid': '1'
+    submit_xml_sitemap_to_google:
+      '#completed': 1607971990
+      '#uid': '1'
+    get_a_microsoft_account:
+      '#completed': 1607971990
+      '#uid': '1'
+    authenticate_with_bing:
+      '#completed': 1607971990
+      '#uid': '1'
+    submit_xml_sitemap_to_bing:
+      '#completed': 1607971990
+      '#uid': '1'
+    add_xml_sitemap_to_your_robotstxt_file:
+      '#completed': 1607971990
+      '#uid': '1'
+    install_and_enable_google_analytics_module:
+      '#completed': 1607972029
+      '#uid': '1'
+    configure_google_analytics_module:
+      '#completed': 1607972029
+      '#uid': '1'
+    install_and_enable_easy_breadcrumbs_module:
+      '#completed': 1607972164
+      '#uid': '1'
+    configure_easy_breadcrumbs_module:
+      '#completed': 1607972164
+      '#uid': '1'
+    install_and_enable_rdf_ui_module:
+      '#completed': 1607972164
+      '#uid': '1'

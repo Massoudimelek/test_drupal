@@ -1,0 +1,22 @@
+entity.derniers_articles.settings:
+  title: Settings
+  route_name: entity.derniers_articles.settings
+  base_route: entity.derniers_articles.settings
+entity.derniers_articles.view:
+  title: View
+  route_name: entity.derniers_articles.canonical
+  base_route: entity.derniers_articles.canonical
+entity.derniers_articles.edit_form:
+  title: Edit
+  route_name: entity.derniers_articles.edit_form
+  base_route: entity.derniers_articles.canonical
+entity.derniers_articles.delete_form:
+  title: Delete
+  route_name: entity.derniers_articles.delete_form
+  base_route: entity.derniers_articles.canonical
+  weight: 10
+entity.derniers_articles.collection:
+  title: Derniers Articles
+  route_name: entity.derniers_articles.collection
+  base_route: system.admin_content
+  weight: 10

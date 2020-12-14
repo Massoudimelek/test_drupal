@@ -1,0 +1,30 @@
+uuid: 23587591-7834-443c-a484-fac1e89193cb
+langcode: en
+status: true
+dependencies:
+  module:
+    - aggregator
+title: 'Refresh feeds'
+id: aggregator_cron
+weight: 0
+module: aggregator
+callback: aggregator_cron
+scheduler:
+  id: crontab
+  configuration:
+    rules:
+      - '0   6  *   *   *'
+    catch_up: 0
+launcher:
+  id: serial
+  configuration:
+    timeouts:
+      lock_timeout: 3600
+    launcher:
+      thread: 0
+logger:
+  id: database
+  configuration:
+    method: '3'
+    expire: 1209600
+    retain: 1000

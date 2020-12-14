@@ -1,0 +1,10 @@
+entity.derniers_articles.settings:
+  title: Derniers Articles
+  description: Configure a Derniers Articles entity type
+  route_name:  entity.derniers_articles.settings
+  parent: system.admin_structure
+entity.derniers_articles.collection:
+  title: Derniers Articleses
+  description: List of derniers articleses
+  route_name: entity.derniers_articles.collection
+  parent: system.admin_content

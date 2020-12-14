@@ -1,0 +1,7 @@
+block.settings.test_module_derniers_articles:
+  type: block_settings
+  label: 'Derniers Articles block'
+  mapping:
+    foo:
+      type: string
+      label: Foo

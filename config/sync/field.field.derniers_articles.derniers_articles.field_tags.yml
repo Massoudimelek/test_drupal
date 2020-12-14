@@ -1,0 +1,30 @@
+uuid: 13ad8308-1f2a-49af-a457-94a1a4b11ebd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.derniers_articles.field_tags
+    - taxonomy.vocabulary.tags
+  module:
+    - derniers_articles
+id: derniers_articles.derniers_articles.field_tags
+field_name: field_tags
+entity_type: derniers_articles
+bundle: derniers_articles
+label: Tags
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

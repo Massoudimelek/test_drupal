@@ -1,0 +1,21 @@
+{#
+/**
+ * @file
+ * Default theme implementation to present a derniers articles entity.
+ *
+ * This template is used when viewing a registered derniers articles's page,
+ * e.g., /admin/content/derniers-articles)/123. 123 being the derniers articles's ID.
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ *   print a subset such as 'content.title'.
+ * - attributes: HTML attributes for the container element.
+ *
+ * @see template_preprocess_derniers_articles()
+ */
+#}
+<article{{ attributes }}>
+  {% if content %}
+    {{- content -}}
+  {% endif %}
+</article>

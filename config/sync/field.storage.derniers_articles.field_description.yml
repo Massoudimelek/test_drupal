@@ -1,0 +1,19 @@
+uuid: 5a38d2c4-1048-44be-becc-a918131fdf9d
+langcode: en
+status: true
+dependencies:
+  module:
+    - derniers_articles
+    - text
+id: derniers_articles.field_description
+field_name: field_description
+entity_type: derniers_articles
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,5 @@
+administer derniers articles:
+  title: 'Administer derniers articles settings'
+  restrict access: true
+access derniers articles overview:
+  title: 'Access derniers articles overview page'
